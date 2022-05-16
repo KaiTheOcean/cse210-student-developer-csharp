@@ -51,7 +51,7 @@ namespace unit02_hilo
             Console.WriteLine();
             Console.Write($"The score is: {totalPoints}. ");
             Console.WriteLine();
-            Console.Write($"Do you want to play again? [y/n] ");
+            Console.Write("Do you want to play again? [y/n] ");
             string playAgain = Console.ReadLine();
             if (playAgain == "n")
             {
