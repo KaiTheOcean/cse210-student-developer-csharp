@@ -7,7 +7,6 @@ namespace unit02_hilo
     public class Director 
     {
         bool isPlaying = true;
-        int point = 0; 
         int totalPoints = 300;
         string guess = " ";
         public Director()
@@ -44,6 +43,7 @@ namespace unit02_hilo
             {
                 totalPoints -= 75;
             }
+            card1 = card2;
 
         }
         public void GetOutputs()
