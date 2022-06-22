@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unit04.Game.Casting;
 using Unit04.Game.Services;
+using System;
 
 
 namespace Unit04.Game.Directing
@@ -80,6 +81,9 @@ namespace Unit04.Game.Directing
                     _totalScore += points;
                     string message = _totalScore.ToString();
                     banner.SetText(message);
+                    Random rand = new Random();
+                    int x = rand.Next(0, 900);
+                    artifact.SetPosition(new Point(x, 0));
                 }
             } 
         }
